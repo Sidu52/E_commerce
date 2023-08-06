@@ -1,0 +1,183 @@
+.home {
+    background-image: linear-gradient(#e2e6e7, #e2e6e7);
+    backdrop-filter: blur(60px);
+
+    .home_img_container {
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 600px;
+            position: absolute;
+            top: 0;
+            z-index: -3;
+        }
+
+        .img_button {
+            width: 100%;
+            height: 260px;
+
+
+            &:hover {
+                .but {
+                    padding: 24px;
+                    border: 3px solid black;
+                }
+
+                .but2 {
+                    padding: 25px;
+                    border: 3px solid white;
+                }
+            }
+        }
+
+        button {
+            position: absolute;
+            top: 0;
+            height: 100%;
+            background: transparent;
+            border: none;
+            font-size: 2rem;
+            font-weight: 800;
+            padding: 26px;
+
+        }
+
+
+        .prev_button {
+            left: 0%;
+
+            &:hover {
+                border: 2px solid black;
+            }
+        }
+
+        .prev_button2 {
+            left: 2px;
+            color: white;
+        }
+
+        .next_button {
+            right: 0;
+        }
+
+        .next_button2 {
+            right: 2px;
+            color: white;
+
+            &:hover {
+                border: 2px solid white;
+            }
+        }
+    }
+
+    .card_container {
+        display: flex;
+        justify-content: space-around;
+        backdrop-filter: blur(60px);
+        margin-top: 10px;
+
+        // div {
+        //     margin: 10px 5px;
+        // }
+
+        .ad {
+            background: white;
+            width: 20%;
+            height: 5%;
+            padding: 15px;
+
+            img {
+                width: 100%;
+                height: 75%;
+
+            }
+        }
+
+        .extraAdStryle {
+            width: auto;
+            height: auto;
+
+        }
+    }
+
+    .backtotop {
+        text-align: center;
+        background: #36465a;
+        color: #fff;
+        padding: 10px;
+    }
+
+    a {
+        color: white;
+        list-style: none;
+        text-decoration: none;
+    }
+
+    @media (max-width:700px) {
+        .card_container {
+            flex-wrap: wrap;
+
+            .ad {
+                min-width: 40%;
+                height: auto;
+            }
+        }
+
+        .card-4x4 {
+            min-width: 40%;
+        }
+    }
+
+    @media (max-width:400px) {
+        .home_img_container {
+            overflow: hidden;
+
+            img {
+                width: 600px;
+            }
+
+            .img_button {
+                .but {
+                    padding: 4px;
+
+                }
+
+                .but2 {
+                    padding: 5px;
+
+                }
+
+                &:hover {
+                    .but {
+                        padding: 4px;
+
+                    }
+
+                    .but2 {
+                        padding: 5px;
+
+                    }
+                }
+
+
+
+                button {
+                    padding: 5px;
+                }
+            }
+        }
+
+        .card_container {
+
+            .ad {
+                min-width: 90%;
+                height: auto;
+            }
+        }
+
+        .card-4x4 {
+            min-width: 90%;
+        }
+    }
+}

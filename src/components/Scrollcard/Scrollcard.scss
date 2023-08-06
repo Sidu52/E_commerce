@@ -1,0 +1,69 @@
+.scroll_container {
+    position: relative;
+    padding: 10px 20px;
+    margin: 15px;
+    background: #fff;
+
+    button {
+        position: absolute;
+        top: 50%;
+        height: 40%;
+        width: 50px;
+        text-align: center;
+        background: white;
+        border: none;
+        font-size: 2rem;
+        font-weight: 800;
+        border: 1px solid black;
+        transform: translate(0, -50%);
+    }
+
+    .prev_button {
+        left: 0;
+    }
+
+    .next_button {
+        right: 0;
+    }
+
+    h3 {
+        margin-bottom: 15px;
+    }
+
+    .card {
+        display: flex;
+        gap: 20px;
+        overflow-x: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        &:hover {
+            &::-webkit-scrollbar {}
+        }
+
+        img {
+            width: 220px;
+            height: 150px;
+        }
+
+        .card-offer {
+            color: #cd0c38;
+            margin: 10px 0;
+
+            span {
+                background: #cd0c38;
+                color: #f5efef;
+                padding: 5px;
+            }
+
+            p {
+                color: black;
+                padding-top: 5px
+            }
+
+            ;
+        }
+    }
+}
